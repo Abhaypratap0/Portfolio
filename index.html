@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <mata  charset="UTF-8">
+    <meta  http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta  name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>persona portfolio website - Abhay Pratap</title>
+    <link  rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/5e4d211e96.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#Projects">Project</a></li>
+                <li><a href="#Certificate">Certificate</a></li>
+                <li><a href="#Contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p><span>Engineering Student</span></p>
+            <h1>Hi, I'm <span>Abhay Pratap</span><br> Form Kanpur, <br>
+                    Uttar Pradesh</h1>
+        </div>
+
+    </div>
+</div>
+<!--------------About------------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.jpg" class="user">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About me</h1>
+                <p>
+                    I am dedicated individual with a strong grasp 
+                    of programming languages and development tools. Currently 
+                    pursuing a B.Tech in Information Technology, he excels in 
+                    Python, Java, HTML, CSS, and problem-solving. With notable 
+                    achievements in competitive coding and a passion for technology, 
+                    he seeks opportunities to contribute effectively to a growth-oriented 
+                    company while continuously enhancing his skills.
+                </p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>TECHNICAL SKILLS</span><br>Python Programming Language, Data Structure, HTML, CSS, Database Management System(DBMS), OOPS.</li>
+                        <li><span>SOFT SKILLS</span><br>Adaptability, Analytical, Self-motivated, Teamwork.</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2020 - 2024</span><br>B.Tech form <b>Pranveer Singh Institute of Technology(PSIT)</b></li>
+                        <li><span>2018 - 2019</span><br>Senior Secondary From <b>Oxford Model Senior Secondary School, Shyam Nagarl</b></li>
+                        <li><span>2016 - 2017</span><br>Higher Secondary From <b>Kendriya Vidyalaya No 2 AFS Chakeri, Kanpur</b></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!------------Projects------->
+<div id="Projects">
+    <div class="container">
+        <h1 class="sub-title">My projects</h1>
+        <div class="projects-list">
+            <div>
+                <i class="fa-solid fa-envelope"></i>
+                <h2>Email Spam Classifier</h2>
+                <p>It is a machine learning model used to predict weather a mail is spam or ham mail.
+                    It uses naive bayes classifier to predict a binary outcome such as 0 or 1 based on prior email data as Data set. </p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-hand"></i>
+                <h2>Hand Gesture Recognition</h2>
+                <p>It is a machine-learning model used to Control the presentation with hand gestures.
+                    It uses external modules and packages such as cv2 and HandTrackingModule.  </p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-cloud"></i>
+                <h2>Weather Forecasting Website</h2>
+                <p>It is a weather app that displays the current weather details for any
+                    location. Technology used: HTML, CSS, JavaScript. Open Weather Map API used to get the data of the weather as a backend.</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!----------Certificate------>
+<div id="Certificate">
+    <div class="container">
+        <h1 class="sub-title">My Certificate</h1>
+        <div class="Certificate-list">
+            <div class="work">
+                <img src="images/Certificate1.png"> 
+                <div class="layer">
+                    <h3>Problem Solving through Coding (HackerRank)</h3>
+                    <a href="#"><i class="fa-solid fa-square-arrow-up-right"></i></i></a>
+                </div>           
+            </div>
+            <div class="work">
+                <img src="images/Certificate2.png" >
+                <div class="layer">
+                    <h3>Python(Basic) through Coding (HackerRank)</h3>
+                    <a href="#"><i class="fa-solid fa-square-arrow-up-right"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/Certificate1.png">
+                <div class="layer">
+                    <h2>Codeing Ninja - Java Certificate</h2>
+                    <a href="#"><i class="fa-solid fa-square-arrow-up-right"></i></a>
+                </div> 
+            </div>
+        </div> 
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<!--contect-->
+<div id="Contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> pabhay037@gmail.com</p>
+                <p><i class="fa-sharp fa-solid fa-square-phone"></i>8957295155</p>
+                <div class="social-icon">
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter-square"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+
+                </div>
+                <a href="images/Abhay's_Resume.pdf" download class="btn btn2">Download Resume</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name"  placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>copyright © Abhay Pratap <i class="fa-solid fa-heart"></i></p>
+    </div>
+</div>
+
+
+<script>
+    var tablinks=document.getElementsByClassName("tab-links");
+    var tabcontents=document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link")
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab")
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+    var sidemenu=document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right="0"
+    }
+    function closemenu(){
+        sidemenu.style.right="-200px"
+    }
+
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwjVj8AvMo5K3PuHyy9WKcRE7zH1_loXCcDRu-MUVriY0yYP0DSGKVey2BRfg3emXmcBg/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg=document.getElementById('msg')
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML="Message send successfully"
+            setTimeout(function(){
+                msg.innerHTML=''
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+</body>
+</html>
